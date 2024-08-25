@@ -322,7 +322,113 @@ footer p {
     gap: 32px ;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #header, #footer {
+        padding: 16px 24px;
+    }
+
+    section {
+        padding: 48px 24px;
+    }
+
+    #landing {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #landing > div {
+        width: 100%;
+    }
+
+    #about {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about > div {
+        width: 100%;
+    }
+
+    .service-detail {
+        column-gap: 64px;
+    }
+
+    .contact-detail {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 48px;
+    }
+
+    .contact-detail form, .contact-detail > div {
+        width: 100%;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #header, #footer {
+        padding: 16px 16px;
+    }
+
+    section {
+        padding: 32px 16px;
+    }
+
+    #landing {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #landing > div {
+        width: 100%;
+    }
+
+    #about {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about > div {
+        width: 100%;
+    }
+
+    .service-detail {
+        column-gap: 16px;
+    }
+
+    .contact-detail {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 32px;
+    }
+
+    .contact-detail form, .contact-detail > div {
+        width: 100%;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+/* @media only screen and (max-width: 1200px) {
     .service-detail {
         gap: 24px;
     }
@@ -383,4 +489,4 @@ footer p {
     .contact-detail form, .contact-detail > div {
         width: 100%;
     }
-}
+} */
